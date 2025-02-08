@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Water Tank Storage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Water storage calculator
+        </h1>
+    </header>
+    <main>
+        <div>
+            <label for="blocks">Block Heights</label>
+            <input type="text" id="blocks" name="blocks" required placeholder="Enter blocks heights separated by commas" />
+            <button id="calculate" onclick="showResults()">Calculate</button>
+        </div>
+        <div id="result" class="result">
+            <div class="input">
+              <h2>Input</h2>
+              <p id="inputValue"></p>
+            </div>
+            <div class="output">
+              <h2>Output</h2>
+              <p id="outputValue"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Water Tank Storage</p>
+    </footer>
+</body>
+
+</html>

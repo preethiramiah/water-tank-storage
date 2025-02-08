@@ -1,0 +1,89 @@
+:root {
+  --header-footer-background-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--header-footer-background-color);
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin-top: 125px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: var(--header-footer-background-color);
+  color: white;
+  padding: 10px;
+  margin: 32px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#blocks {
+  min-width: 300px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#calculate {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: 16px;
+}
+
+#calculate:hover {
+  background-color: #45a049;
+}
+
+#calculate:active {
+  background-color: #049A6D;
+}
+
+#calculate:focus {
+  outline: none;
+}
+
+.result {
+  margin-top: 1rem;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    margin-top: 150px;
+  }
+
+  #blocks {
+    min-width: 260px;
+    margin-top: 0.5rem;
+  }
+
+  #calculate {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
